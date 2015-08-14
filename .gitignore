@@ -1,0 +1,20 @@
+.vs
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.csproj.user
+*.idc
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
