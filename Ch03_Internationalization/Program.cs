@@ -9,7 +9,6 @@ namespace Ch03_Internationalization
     {
         static void Main(string[] args)
         {
-            int
             WriteLine();
             var t = Thread.CurrentThread;
             WriteLine($"  The current globalization culture is {t.CurrentCulture.Name}: {t.CurrentCulture.DisplayName}");
