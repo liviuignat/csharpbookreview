@@ -21,6 +21,12 @@ namespace Ch04_InheritanceApp
             WriteLine(aliceInEmployee.ToString());
             WriteLine(aliceInPerson.ToString());
 
+            Employee e3 = aliceInPerson as Employee;
+            if (e3 != null)
+            {
+                // do something with e3
+            }
+
         }
     }
 }
