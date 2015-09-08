@@ -43,5 +43,18 @@ namespace Packt.LearningCS
             }
         }
 
+        public event EventHandler Shout;
+        public int AngerLevel;
+        public void Poke()
+        {
+            AngerLevel++;
+            if (AngerLevel >= 3)
+            {
+                if (Shout != null)
+                {
+                    Shout(this, EventArgs.Empty);
+                }
+            }
+        }
     }
 }

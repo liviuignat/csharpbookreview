@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04_PeopleApp", "Ch04_Peop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04_PacktLibrary", "Ch04_PacktLibrary\Ch04_PacktLibrary.csproj", "{A254740B-D871-470B-83FE-6AD6D6354ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04_InheritanceApp", "Ch04_InheritanceApp\Ch04_InheritanceApp.csproj", "{CD9D6F27-0B65-48E8-BC00-16419AEE4928}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A254740B-D871-470B-83FE-6AD6D6354ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A254740B-D871-470B-83FE-6AD6D6354ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A254740B-D871-470B-83FE-6AD6D6354ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9D6F27-0B65-48E8-BC00-16419AEE4928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9D6F27-0B65-48E8-BC00-16419AEE4928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9D6F27-0B65-48E8-BC00-16419AEE4928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9D6F27-0B65-48E8-BC00-16419AEE4928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

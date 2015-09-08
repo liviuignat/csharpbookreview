@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A254740B-D871-470B-83FE-6AD6D6354ED0}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{CD9D6F27-0B65-48E8-BC00-16419AEE4928}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ch04_PacktLibrary</RootNamespace>
-    <AssemblyName>Ch04_PacktLibrary</AssemblyName>
+    <RootNamespace>Ch04_InheritanceApp</RootNamespace>
+    <AssemblyName>Ch04_InheritanceApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankAccount.cs" />
-    <Compile Include="DisplacementVector.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Person2.cs" />
-    <Compile Include="PersonComparer.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WondersOfTheAncientWorld .cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ch04_PacktLibrary\Ch04_PacktLibrary.csproj">
+      <Project>{a254740b-d871-470b-83fe-6ad6d6354ed0}</Project>
+      <Name>Ch04_PacktLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

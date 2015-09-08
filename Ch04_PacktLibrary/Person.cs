@@ -3,7 +3,7 @@ using static System.Console;
 using System.Collections.Generic;
 namespace Packt.LearningCS
 {
-    public partial class Person
+    public partial class Person : IComparable<Person>
     {
         public readonly string HomePlanet = "Earth";
         public readonly DateTime Instantiated;
@@ -64,6 +64,21 @@ namespace Packt.LearningCS
         }
 
         public static Person operator *(Person p1, Person p2) => new Person("Baby");
+
+        public int MethodIWantToCall(string input)
+        {
+            return input.Length;
+        }
+
+        public int CompareTo(Person other)
+        {
+            return Name.CompareTo(other.Name);
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} is a {base.ToString()}";
+        }
 
     }
 }
